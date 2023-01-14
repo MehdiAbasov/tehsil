@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/scss/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>HTML dersleri</title>
+</head>
+
+<body>
+    <nav>
+        <div class="responsive-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+            <a href="../home.html">
+                siteM
+            </a>
+        </div>
+        <form action id="search-box" class="search-box">
+            <input autocomplete="off" type="text" id="search" placeholder="Axtarış">
+        </form>
+        <div class="dropdown">
+            <button id="dropBtn" class="dropbtn">Dərslər
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div id="dropContent" class="dropdown-content">
+                <a href="../home.html">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JAVASCRIPT</a>
+                <a href="#">REACT</a>
+                <a href="#">NEXTJS</a>
+                <a href="#">GITHUB</a>
+            </div>
+        </div>
+        <script>
+            const dropBtn = document.getElementById('dropBtn')
+            const dropContent = document.getElementById('dropContent')
+
+            dropBtn.addEventListener('click', function () {
+                dropContent.style.display = 'block'
+            })
+
+            document.addEventListener('click', function (e) {
+                if (
+                    !e.composedPath().includes(dropContent) &&
+                    !e.composedPath().includes(dropBtn)
+                ) {
+                    dropContent.style.display = 'none'
+                }
+            })
+        </script>
+    </nav>
+
+    <main class="main">
+        <aside class="sidebar">
+            <h4 class="content-title">HTML dərsləri</h4>
+            <div class="lesson-content">
+                <ul>
+                    <li>
+                        <a class="active" href="./html.html">
+                            Başlanğıc
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./təməllər.html">
+                            Təməllər
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./etiketler.html">
+                            Etiketler
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./nitelikler.html">
+                            Nitelikler
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./başliq-etiketleri.html">
+                            Başlıq etiketləri
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./paraqraf-etiketleri.html">
+                            Paraqraf etiketləri
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./metin-düzenleme">
+                            Mətin düzənləmə
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./alıntılar">
+                            Alıntılar
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./şərh">
+                            Şərh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./bağlantılar.html">
+                            Bağlantılar (Linklər)
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./rəsm-etiketi">
+                            Rəsm etiketi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./table-etiketleri.html">
+                            table etiketleri
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./link-etiketleri.html">
+                            list etiketləri
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./">
+                            İd və Class
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./">
+                            Dosya yolları
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./">
+                            İframe
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./">
+                            Özəl karakterlər
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#./">
+                            Head etiketləri
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./">
+                            Kod etiketləri
+                        </a>
+                    </li>
+                </ul>
+                <div class="divider big"></div>
+                <h4 class="content-title">HTML5</h4>
+                <ul>
+                    <li>
+                        <a href="#">HTML5 ə Giriş</a>
+                    </li>
+                    <li>
+                        <a href="#">HTML5 Browser Dəstəyi</a>
+                    </li>
+                    <li>
+                        <a href="#">HTML5 Video</a>
+                    </li>
+                </ul>
+
+                <div class="divider big"></div>
+
+                <h4 class="content-title">Formlar</h4>
+                <ul>
+                    <li>
+                        <a href="#">Formdan istifadə</a>
+                    </li>
+                    <li>
+                        <a href="#">Form Etiketləri</a>
+                    </li>
+                    <li>
+                        <a href="#">İnput tipləri</a>
+                    </li>
+                </ul>
+
+                <div class="divider big"></div>
+
+                <h4 class="content-title">Etiketler</h4>
+            </div>
+        </aside>
+        <div class="content">
+            <div class="content-inner baslangic-html">
+                <div class="block-content">
+                    <h2 id="html-nedir">
+                        <a href="#html-nedir">
+                            <i class="fa-solid fa-code"></i>
+                            HTML Nədir?
+                        </a>
+                    </h2>
+                    <p>HTML, web səhifələri yaradılarkən işlədilən işarətləmə dildir. İngilizcəsi "hyper-text markup
+                        language", Azərbaycancası "hiper mətin işarətləmə dilinin" qısaltmasıdır. </p>
+
+                    <p>Bir web səhifəsinə girilən zaman, görülən HTML elementləri ilə yazılmışdır. Onların daha gözəl və
+                        nizamlı gönünməsi üçün <code>CSS</code>, daha dinamik olması üçün isə <code>Javascript</code>dən
+                        istifadə olunur</p>
+
+                    <p><code>CSS</code>və <code>Javascript</code> dərslərinə <code>HTML</code>dən sonra baxılması bu
+                        sahəyə
+                        yeni başlayanlar üçün daha yaxşı olacaqdır. <code>HTML</code>i öyrəndikdən sonra sıra ilə
+                        <code>CSS</code> və <code>Javascript</code>, front-end öyrənmək istəyən insanların getməsi
+                        gərəkən
+                        bir yoldur
+                    </p>
+
+                    <ul>
+                        <li>HTML, uzun adı ilə "Hyper Text Markup Language" deməktir.</li>
+                        <li>HTML, Azərbaycan dilində "Hiper mətin işarətləmə dili" deməktir.</li>
+                        <li>HTML ilə yazılar işarətlənərək, web səyfələrinin strukturları müəyyənləşdirilər.</li>
+                        <li>HTML ilə işləyərəkən müəyyən olunmuş HTML elementlərindən istifadə olunur.</li>
+                    </ul>
+                </div>
+                <div class="block-content">
+                    <h2>
+                        <a href="#">
+                            <i class="fa-solid fa-code"></i>
+                            Sadə Html Səhifəsi
+                        </a>
+                    </h2>
+                    <p>Sadə bir HTML səyfəsi, təməl olaraq aşağıdakı etiketlƏrdən ibarətdir.</p>
+
+                    <div class="editor-code-block">
+                        <div class="code-toolbar">
+                            <pre class="language-html"><meta itemprop="name" content="HTML'e Başlangıç"><code itemprop="text" class=" language-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Başlık<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+
+test
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span></code>
+</pre>
+                            <div class="toolbar">
+                                <div class="language-name">
+                                    <span>HTML</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-browser-mockup">
+                            <div class="browser-head">
+                                <div class="buttons">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="browser-nav">
+                                    Browser
+                                </div>
+                            </div>
+                            <div class="iframe">
+                                test
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h2>
+                        <a href="#">
+                            <i class="fa-solid fa-code"></i>
+                            Səhifənin Açıqlaması
+                        </a>
+                    </h2>
+
+                    <ul>
+                        <li>
+                            <code><span><</span>!doctype></code>sənədin növünü əks etdirir və brauzerlərə veb səhifələri
+                            düzgün
+                            göstərməyə kömək edir.
+                        </li>
+                        <li>
+                            <code><span><</span>html></code>kök elementdir və bütün HTML sənədini müəyyən edir .
+                        </li>
+                        <li>
+                            <code><span><</span>head></code>etiketdə səhifə haqqında başlıqlar var. Başqa sözlə,
+                            istifadəçinin veb-səhifəyə daxil olanda görə bilmədiyi, ancaq arxa planda yüklənərək
+                            əməliyyatı davam etdirəcəyi məlumatları əhatə edir. Bunların ilk nümunəsi olan
+                            <code><span><</span>title></code>etiketi yazaraq səhifənin başlığını təyin etdik . Bu
+                            etiketin təfərrüatlarına daha sonra gələcəyik.
+                        </li>
+                        <li>
+                            <code><span><</span>body></code>Element sənədin gövdəsini müəyyənləşdirir. HTML-də
+                            yazacağımız hər şey <code><span><</span>body></code>teqinin içərisində olur.
+                        </li>
+                        <li>
+                            <code><span><</span>title></code>teqi səhifənin başlığını müəyyən etmək üçün istifadə
+                            olunur.
+                        </li>
+                        <li>
+                            <code><span><</span>meta></code>teqi səhifə haqqında metadatanı müəyyən edir. Metadata
+                            verilənlər haqqında məlumatdır. <code><span><</span>meta></code>teqi içərisində yazılanlar
+                            səhifədə göstərilməyəcək, lakin
+                        </li>
+                    </ul>
+
+                    <p>Əgər yuxardakı misalı anlamadınızsa <a href="#tag-strukturu">tag strukturuna baxın!</a></p>
+                </div>
+                <div class="block-content">
+                    <h2 id="tag-strukturu"><a href="#">
+                            <i class="fa-solid fa-code"></i>
+                            HTML-də Tag Strukturu
+                        </a></h2>
+
+                    <ul>
+                        <li>
+                            Teqlər HTML-də mətni qeyd etmək üçün istifadə olunur. Və teqləri təyin edərkən
+                            <code><span><</span>kiçikdir</code> <code>teq</code>
+                            <code>böyüktür></code> işarələrin içərisində yazılır. Yəni <code><span><</span>teq></code>
+                            kimi yazılır.
+                        </li>
+                        <li>
+                            Bundan əlavə, açılmış teqlər əvvəlinə <code>/</code>işarəsi qoyularaq bağlanır. yəni
+                            <code><span><</span>teq></code> <code><span><<span>/</span></span>teg></code>kimi olur.
+                            Lakin bütün teqlər açılıb bağlanmır, bəzi teqlər avtomatik bağlanır. Ona görədə onları
+                            bağlamağa ehtiyac yoxdur.
+                            Bunların fərqini növbəti dərslərdə Görəcəksiniz. Misal çəkməli olsaq
+                            <code><span><</span>img></code> , <code><span><</span>br></code> ,
+                            <code><span><</span>hr></code>
+                        </li>
+                    </ul>
+
+                    <p>Nümunə:</p>
+                    <div class="editor-code-block">
+                        <div class="code-toolbar">
+                            <pre class="language-html"><code class="language-html"><span class="token punctuation"><<span class="tag">b<span class="punctuation">></span></span></span>qalın yazı<span class="token punctuation"><<span class="punctuation">/</span><span class="tag">b<span class="punctuation">></span></span></span></code>
+                    </pre>
+                            <div class="toolbar">
+                                <div class="language-name">
+                                    <span>HTML</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-browser-mockup">
+                            <div class="browser-head">
+                                <div class="buttons">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                Browser
+                            </div>
+                            <div class="iframe">
+                                <b>qalın yazı</b>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Nümunədə qeyd olunmuş teq yəni <code><span><</span>b><span><</span>/b></code> "bold" yəni qalın
+                        deməkdir</p>
+                </div>
+                <div class="block-content">
+                    <h2><a href="#">
+                            <i class="fa-solid fa-code"></i>
+                            HTML-də atribut Strukturu
+                        </a></h2>
+
+                    <p>HTML atributları HTML elementləri haqqında əlavə məlumat verir.</p>
+
+                    <p><code><span><</span>a></code> teqi hiperink məyyən edir. <code>href</code> atributu, keçidin
+                        getdiyi səhifənin URL-ni təyin edir</p>
+                    <p>atributu teqi açdıqdan sonra <code>atribut="dəyər"</code> şəklində yazılır.</p>
+                    <p>misal üçün:</p>
+                    <div class="editor-code-block">
+                        <div class="code-toolbar">
+                            <pre class="language-html"><meta itemprop="name" content="HTML'e Başlangıç"><code itemprop="text" class="language-html"><span class="token tag"><span class="token tag"><span class="tag punctuation">&lt</span>a</span> <span class="attr-name">href</span><span class="attr-value"><span class="punctuation">=</span><span class="punctuation">"</span>https://www.instagram.com/mehdi_abasovv<span class="punctuation">"</span></span><span class="punctuation">&gt;</span>instagram<span class="token tag"><span class="punctuation">&lt;/</span>a<span class="punctuation">&gt;</span></span></span>
+                        </code>
+                </pre>
+                            <div class="toolbar">
+                                <div class="language-name">
+                                    <span>HTML</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-browser-mockup">
+                            <div class="browser-head">
+                                <div class="buttons">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="browser-nav">
+                                    Browser
+                                </div>
+                            </div>
+                            <div class="iframe">
+                                <a href="https://www.instagram.com/mehdi_abasovv/"
+                                    style="text-decoration: underline;">instagram</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

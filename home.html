@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/scss/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="responsive-bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="logo">
+            <a href="/home.html">
+                siteM
+            </a>
+        </div>
+        <div class="dropdown">
+            <button id="dropBtn" class="dropbtn">Dərslər
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div id="dropContent" class="dropdown-content">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JAVASCRIPT</a>
+                <a href="#">REACT</a>
+                <a href="#">NEXTJS</a>
+                <a href="#">GITHUB</a>
+            </div>
+        </div>
+
+        <script>
+            const dropBtn = document.getElementById('dropBtn')
+            const dropContent = document.getElementById('dropContent')
+
+            dropBtn.addEventListener('click', function () {
+                dropContent.style.display = 'block'
+            })
+
+            document.addEventListener('click', function (e) {
+                if (
+                    !e.composedPath().includes(dropContent) &&
+                    !e.composedPath().includes(dropBtn)
+                ) {
+                    dropContent.style.display = 'none'
+                }
+            })
+        </script>
+
+    </nav>
+
+    <main class="main">
+        <div class="content">
+            <div class="content-inner">
+                <h3>Özünə dəyər ver və inkişaf et!</h3>
+                <p>Yaxşı bir gələcək üçün, düzgün bir başlanğıc lazımdır</p>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="swiper-slide-lesson-link" href="./html/html.html">
+                                <span class="icon">
+                                    <i class="fa-brands fa-html5"></i>
+                                </span>
+                                <span class="lesson-name">
+                                    HTML
+                                </span>
+                                <span class="about-lesson">
+                                    <span class="file">
+                                        <i class="fa-solid fa-file"></i>
+                                        <span>...</span>
+                                    </span>
+                                    <span class="video">
+                                        <i class="fa-solid fa-video"></i>
+                                        <span>...</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="swiper-slide-lesson-link" style="border-color: #128dc2;" href="#">
+                                <span style="border-color: #128dc2; color: #128dc2;" class="icon">
+                                    <i class="fa-brands fa-css3"></i>
+                                </span>
+                                <span style="background-color: #128dc2;" class="lesson-name">
+                                    CSS
+                                </span>
+                                <span class="about-lesson" style="border-color: #128dc2;">
+                                    <span class="file">
+                                        <i class="fa-solid fa-file"></i>
+                                        <span>...</span>
+                                    </span>
+                                    <span class="video">
+                                        <i class="fa-solid fa-video"></i>
+                                        <span>...</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="swiper-slide-lesson-link" style="border-color: #ffd500;" href="#">
+                                <span style="border-color: #ffd500; color: #ffd500;" class="icon">
+                                    <i class="fa-brands fa-js"></i>
+                                </span>
+                                <span style="background-color: #ffd500;" class="lesson-name">
+                                    JAVASCRIPT
+                                </span>
+                                <span style="border-color: #ffd500 ;" class="about-lesson">
+                                    <span class="file">
+                                        <i class="fa-solid fa-file"></i>
+                                        <span>...</span>
+                                    </span>
+                                    <span class="video">
+                                        <i class="fa-solid fa-video"></i>
+                                        <span>...</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="swiper-slide-lesson-link" style="border-color: #128dc2;" href="#">
+                                <span style="color: #128dc2; border-color: #128dc2;" class="icon">
+                                    <i class="fa-brands fa-react"></i>
+                                </span>
+                                <span style="background-color: #128dc2;" class="lesson-name">
+                                    REACT
+                                </span>
+                                <span style="border-color: #128dc2;" class="about-lesson">
+                                    <span class="file">
+                                        <i class="fa-solid fa-file"></i>
+                                        <span>...</span>
+                                    </span>
+                                    <span class="video">
+                                        <i class="fa-solid fa-video"></i>
+                                        <span>...</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="swiper-slide-lesson-link" style="border-color: #353535;" href="#">
+                                <span style="border-color: #353535; color: #353535;" class="icon">
+                                    <i class="fa-brands fa-n"></i>
+                                </span>
+                                <span style="background-color: #353535;" class="lesson-name">
+                                    NEXTJS
+                                </span>
+                                <span style="border-color: #353535;" class="about-lesson">
+                                    <span class="file">
+                                        <i class="fa-solid fa-file"></i>
+                                        <span>...</span>
+                                    </span>
+                                    <span class="video">
+                                        <i class="fa-solid fa-video"></i>
+                                        <span>...</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="swiper-slide-lesson-link" style="border-color: #bd2600;" href="#">
+                                <span class="icon">
+                                    <i class="fa-brands fa-github"></i>
+                                </span>
+                                <span class="lesson-name">
+                                    GITHUB
+                                </span>
+                                <span class="about-lesson">
+                                    <span class="file">
+                                        <i class="fa-solid fa-file"></i>
+                                        <span>...</span>
+                                    </span>
+                                    <span class="video">
+                                        <i class="fa-solid fa-video"></i>
+                                        <span>...</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-bullets-dynamic"
+                        style="width: 80px;">
+                        <span class="swiper-pagination-bullet swiper-pagination-bullet-active-prev-prev" tabindex="0"
+                            role="button" aria-label="Go to slide 1" style="left: 0px;"></span><span
+                            class="swiper-pagination-bullet swiper-pagination-bullet-active-prev" tabindex="0"
+                            role="button" aria-label="Go to slide 2" style="left: 0px;"></span><span
+                            class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main"
+                            tabindex="0" role="button" aria-label="Go to slide 3" style="left: 0px;"></span><span
+                            class="swiper-pagination-bullet swiper-pagination-bullet-active-next" tabindex="0"
+                            role="button" aria-label="Go to slide 4" style="left: 0px;"></span><span
+                            class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next" tabindex="0"
+                            role="button" aria-label="Go to slide 5" style="left: 0px;"></span><span
+                            class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"
+                            style="left: 0px;"></span><span class="swiper-pagination-bullet" tabindex="0" role="button"
+                            aria-label="Go to slide 7" style="left: 0px;"></span>
+                    </div>
+                </div>
+                <div class="divider big"></div>
+                <div class="social-media-links">
+                    <div class="instagram social-medi">
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <div>
+                            <p class="title">
+                                instagramda
+                                <b>@mehdi_abasovv</b>
+                                hesabını izləməyi unutmayın!
+                            </p>
+                            <span>kodlaşdırma haqqında ipucu və rahat istifadə yolları paylaşdığım instagram hesabımı
+                                izləməyi
+                                unutmayın</span>
+                            <a target="_blank" href="https://www.instagram.com/mehdi_abasovv/">Takib et</a>
+                        </div>
+                    </div>
+                    <div class="youtube social-medi">
+                        <span><i class="fa-brands fa-youtube"></i></span>
+                        <div>
+                            <p class="title">
+                                youtubeda
+                                <b>@mehdiabasov</b>
+                                kanalını izləməyi unutmayın!
+                            </p>
+                            <span>kodlaşdırma haqqında <b> dərslər </b> və rahat istifadə yolları paylaşdığım youtube
+                                hesabımı
+                                izləməyi
+                                unutmayın</span>
+                            <a target="_blank" href="https://www.youtube.com/channel/UC08JuscJUS73W2L2-shPPzw">Takib
+                                et</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"
+        integrity="sha512-wdUM0BxMyMC/Yem1RWDiIiXA6ssXMoxypihVEwxDc+ftznGeRu4s9Fmxl8PthpxOh5CQ0eqjqw1Q8ScgNA1moQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.css"
+        integrity="sha512-jxGmKjC/OykrTklkNK2NgnhNtKtUAADFY+rvSi3nA7dbaPRfjrSXYxHqX8iq5N6WTOntqEQZrEwW3L84sirfKQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./swiper.js"></script>
+</body>
+
+</html>

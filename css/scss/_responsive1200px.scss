@@ -1,0 +1,29 @@
+@media (max-width:1200px){
+    header #search-box{
+    display: none;
+    }
+
+    .main #sidebar{
+        display: none;
+    }
+
+    .content{
+        padding: 15px !important;
+
+        a.swiper-slide-lesson-link{
+            padding: 20px 10px !important;
+        }
+
+        .instagram,.youtube {
+            display: flex;
+            padding: 10px 20px !important;
+            flex-direction: column;
+
+        }
+    }
+
+    .responsive-bar{
+        display: flex !important;
+    }
+
+}

@@ -1,0 +1,14 @@
+@media (max-width: 400px) {
+    .instagram,.youtube {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0 !important;
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+            gap: 5px;
+        }
+    }
+}
